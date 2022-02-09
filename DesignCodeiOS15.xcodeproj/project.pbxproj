@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC3544FA27B271E200B2BAA8 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3544F927B271E200B2BAA8 /* AccountView.swift */; };
+		EC44562127B26C830067DED5 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44562027B26C830067DED5 /* Styles.swift */; };
+		EC7B7B7E27B3ADF600C1625F /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7B7B7D27B3ADF600C1625F /* HexagonView.swift */; };
+		EC7B7B8027B3B36300C1625F /* BlobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7B7B7F27B3B36300C1625F /* BlobView.swift */; };
+		EC7B7B8227B3BB7000C1625F /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7B7B8127B3BB7000C1625F /* TabBar.swift */; };
+		EC7B7B8427B3BED300C1625F /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7B7B8327B3BED300C1625F /* Tab.swift */; };
 		ECD4E5B127A7B581001C85BA /* DesignCodeiOS15App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD4E5B027A7B581001C85BA /* DesignCodeiOS15App.swift */; };
 		ECD4E5B327A7B581001C85BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD4E5B227A7B581001C85BA /* ContentView.swift */; };
 		ECD4E5B527A7B583001C85BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD4E5B427A7B583001C85BA /* Assets.xcassets */; };
@@ -14,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC3544F927B271E200B2BAA8 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		EC44562027B26C830067DED5 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		EC7B7B7D27B3ADF600C1625F /* HexagonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonView.swift; sourceTree = "<group>"; };
+		EC7B7B7F27B3B36300C1625F /* BlobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobView.swift; sourceTree = "<group>"; };
+		EC7B7B8127B3BB7000C1625F /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		EC7B7B8327B3BED300C1625F /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		ECD4E5AD27A7B581001C85BA /* DesignCodeiOS15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCodeiOS15.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD4E5B027A7B581001C85BA /* DesignCodeiOS15App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCodeiOS15App.swift; sourceTree = "<group>"; };
 		ECD4E5B227A7B581001C85BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +65,12 @@
 			children = (
 				ECD4E5B027A7B581001C85BA /* DesignCodeiOS15App.swift */,
 				ECD4E5B227A7B581001C85BA /* ContentView.swift */,
+				EC44562027B26C830067DED5 /* Styles.swift */,
+				EC3544F927B271E200B2BAA8 /* AccountView.swift */,
+				EC7B7B8127B3BB7000C1625F /* TabBar.swift */,
+				EC7B7B8327B3BED300C1625F /* Tab.swift */,
+				EC7B7B7D27B3ADF600C1625F /* HexagonView.swift */,
+				EC7B7B7F27B3B36300C1625F /* BlobView.swift */,
 				ECD4E5B427A7B583001C85BA /* Assets.xcassets */,
 				ECD4E5B627A7B583001C85BA /* Preview Content */,
 			);
@@ -77,6 +95,7 @@
 				ECD4E5A927A7B581001C85BA /* Sources */,
 				ECD4E5AA27A7B581001C85BA /* Frameworks */,
 				ECD4E5AB27A7B581001C85BA /* Resources */,
+				EC3979C427B395E900138170 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -132,13 +151,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EC3979C427B395E900138170 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint --fix && swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ECD4E5A927A7B581001C85BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC3544FA27B271E200B2BAA8 /* AccountView.swift in Sources */,
+				EC7B7B7E27B3ADF600C1625F /* HexagonView.swift in Sources */,
+				EC44562127B26C830067DED5 /* Styles.swift in Sources */,
+				EC7B7B8427B3BED300C1625F /* Tab.swift in Sources */,
+				EC7B7B8027B3B36300C1625F /* BlobView.swift in Sources */,
 				ECD4E5B327A7B581001C85BA /* ContentView.swift in Sources */,
 				ECD4E5B127A7B581001C85BA /* DesignCodeiOS15App.swift in Sources */,
+				EC7B7B8227B3BB7000C1625F /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
